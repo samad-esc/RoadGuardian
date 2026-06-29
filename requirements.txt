@@ -1,0 +1,52 @@
+
+# Deep Learning 
+torch>=2.3.0
+torchvision>=0.18.0
+torchaudio>=2.3.0
+
+# YOLO
+ultralytics>=8.3.0
+
+# Computer Vision
+opencv-python>=4.10.0
+Pillow>=10.3.0
+
+# Data Processing
+numpy>=1.26.4
+pandas>=2.2.2
+scipy>=1.13.1
+
+# Visualization
+matplotlib>=3.9.0
+seaborn>=0.13.2
+
+# Progress Bars
+tqdm>=4.66.4
+
+# YAML Support
+PyYAML>=6.0.1
+
+# Jupyter (optional)
+jupyter
+ipykernel
+
+# Model Evaluation
+scikit-learn>=1.5.0
+
+# Image Augmentation
+albumentations>=1.4.10
+
+# Utilities
+requests
+psutil
+
+# ONNX Export
+onnx
+onnxruntime
+
+# API (Phase 2)
+fastapi
+uvicorn
+
+# Logging
+loguru
