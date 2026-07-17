@@ -1,43 +1,68 @@
+# =========================
 # Python
+# =========================
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.so
 *.egg-info/
+
+# Virtual Environments
 .venv/
 venv/
 env/
 
-# Models
+# =========================
+# Environment Variables
+# =========================
+.env
+
+# =========================
+# Model Weights
+# =========================
 *.pt
 *.pth
 *.onnx
 *.engine
 *.weights
 
+# =========================
 # Datasets
-datasets/*
-!datasets/merged/
-datasets/merged/*
-!datasets/merged/data.yaml
+# =========================
+datasets/
 
-# Training
-runs/
+# =========================
+# Training Outputs
+# =========================
+runs/*
+!runs/.gitkeep
 
+# =========================
+# Models Directory
+# =========================
+models/*
+!models/.gitkeep
+
+# =========================
 # IDE
+# =========================
 .vscode/
 .idea/
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment
-.env
-
+# =========================
 # Jupyter
+# =========================
 .ipynb_checkpoints/
 
-# Chat logs
+# =========================
+# Logs
+# =========================
+*.log
 chat.txt
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
