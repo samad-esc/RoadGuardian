@@ -17,7 +17,10 @@ env/
 *.weights
 
 # Datasets
-datasets/
+datasets/*
+!datasets/merged/
+datasets/merged/*
+!datasets/merged/data.yaml
 
 # Training
 runs/
@@ -35,4 +38,6 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Chat logs
 chat.txt

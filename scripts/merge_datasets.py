@@ -55,6 +55,9 @@ for src_split, dst_split in split_map.items():
     img_dir = ROOT / "rdd2022" / "RDD_SPLIT" / src_split / "images"
     lbl_dir = ROOT / "rdd2022" / "RDD_SPLIT" / src_split / "labels"
 
+    print(img_dir)
+    print(img_dir.exists())
+
     for img in img_dir.iterdir():
 
         label = lbl_dir / (img.stem + ".txt")
@@ -75,11 +78,11 @@ for src_split, dst_split in split_map.items():
                 if cls in [0, 1, 2]:
                     cls = CRACK
 
-                elif cls == 3:
+                elif cls == 4:
                     cls = POTHOLE
 
                 else:
-                    continue
+                    continue    # ignore "other corruption"
 
                 parts[0] = str(cls)
 
